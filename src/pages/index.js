@@ -4,10 +4,14 @@ import Img from 'gatsby-image'
 import Carousel from 'nuka-carousel';
 
 const IndexPage = ({ data }) => (
-  <div style={{ width: '100%' }}>
-    <Carousel>
-      <Img sizes={data.hotelImages.edges[0].node.sizes} alt="Hotel 1" style={{ height: '100vh' }} />
-      <Img sizes={data.hotelImages.edges[1].node.sizes} alt="Hotel 1" style={{ height: '100vh' }} />
+  <div>
+    <Carousel
+      autoplay={true}
+      autoplayInterval={3000}
+      wrapAround={true}
+    >
+      <Img sizes={data.hotelImages.edges[0].node.sizes} alt="Hotel 1" style={{ height: '90vh' }} />
+      <Img sizes={data.hotelImages.edges[1].node.sizes} alt="Hotel 1" style={{ height: '90vh' }} />
     </Carousel>
   </div>
 )
@@ -15,8 +19,8 @@ const IndexPage = ({ data }) => (
 export default IndexPage
 
 export const query = graphql`
-  query imageGallery1 {
-    hotelImages: allImageSharp(filter: { id: { regex: "/hotel/" } }) {
+  query imageCarousel {
+    hotelImages: allImageSharp(filter: { id: { regex: "/carousel/" } }) {
       edges {
         node {
           sizes(
