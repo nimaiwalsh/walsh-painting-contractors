@@ -1,26 +1,32 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
-import Carousel from 'nuka-carousel';
+import Carousel from 'nuka-carousel'
 
-const IndexPage = ({ data }) => (
-  <div>
-    <Carousel
-      autoplay={true}
-      autoplayInterval={3000}
-      wrapAround={true}
-    >
-      <Img sizes={data.hotelImages.edges[0].node.sizes} alt="Hotel 1" style={{ height: '90vh' }} />
-      <Img sizes={data.hotelImages.edges[1].node.sizes} alt="Hotel 1" style={{ height: '90vh' }} />
-    </Carousel>
-  </div>
-)
+const IndexPage = ({ data }) => {
+  return (
+    <div>
+      <Carousel autoplay={true} autoplayInterval={4000} wrapAround={true}>
+        {data.carouselImages.edges.map(({ node }, num) => {
+          return (
+            <Img
+              key={num}
+              sizes={node.sizes}
+              alt={`Image of house number ${num}`}
+              style={{ height: 'calc(100vh - 56px)' }}
+            />
+          )
+        })}
+      </Carousel>
+    </div>
+  )
+}
 
 export default IndexPage
 
 export const query = graphql`
   query imageCarousel {
-    hotelImages: allImageSharp(filter: { id: { regex: "/carousel/" } }) {
+    carouselImages: allImageSharp(filter: { id: { regex: "/carousel/" } }) {
       edges {
         node {
           sizes(

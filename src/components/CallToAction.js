@@ -5,7 +5,7 @@ const CallToAction = () => {
   return (
     <div className={styles} >
       <h2 className="book-now">
-        Good news! We have 4 free rooms for your selected dates.
+        Contact us for your next premium painting and or decorating job
       </h2>
       <button className="btn">
         <span className="btn__visible">

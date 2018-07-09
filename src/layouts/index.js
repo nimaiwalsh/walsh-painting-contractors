@@ -13,7 +13,7 @@ const Layout = ({ children, data }) => (
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'keywords', content: 'painting, decorating, homes, painter, decorator' },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />

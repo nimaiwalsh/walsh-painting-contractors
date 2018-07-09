@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Walsh Painting Contractors',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -14,6 +14,13 @@ module.exports = {
         name: 'carousel-images',
         path: `${__dirname}/src/resources/images/carousel`,
       }
-    }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/resources/images`,
+      }
+    },
   ],
 }
