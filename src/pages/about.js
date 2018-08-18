@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 
-import PageContainer from './about.css'
+import PageContainer from '../page-styles/about.css'
 import CallToAction from '../components/CallToAction'
 import { ButtonInline, Paragraph, List } from '../utils/StyledComponents'
 

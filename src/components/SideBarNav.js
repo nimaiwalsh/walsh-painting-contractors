@@ -40,14 +40,6 @@ const SideNav = () => {
             <span>Contact</span>
           </Link>
         </li>
-        <li className="side-nav__item">
-          <Link to="/tours" className="side-nav__link" activeClassName={'side-nav__link--active'}>
-            <svg className="side-nav__icon">
-              <use xlinkHref={`#${map.id}`} />
-            </svg>
-            <span>Tours</span>{' '}
-          </Link>
-        </li>
       </ul>
 
       <div className="legal">&copy; 2018 by Walsh Painting Contractors</div>

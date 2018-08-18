@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import Carousel from 'nuka-carousel'
-import styles from './index.css'
+import styles from '../page-styles/index.css'
 
 const IndexPage = ({ data }) => {
   return (
