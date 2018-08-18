@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 import globalStyles from './global.css'
 import { Container, Content, SideBar, MainContent } from './components.css'
-import Header from '../components/header'
+import Header from '../components/Header'
 import SideNav from '../components/SideBarNav'
 
 const Layout = ({ children, data }) => (
