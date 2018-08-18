@@ -13,7 +13,7 @@
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sharp": "^1.6.44",
     "gatsby-plugin-svg-sprite": "^1.0.0",
-    "gatsby-plugin-svgr": "^1.0.0",
+    "gatsby-source-contentful": "^1.3.54",
     "gatsby-source-filesystem": "^1.5.35",
     "gatsby-transformer-sharp": "^1.6.24",
     "nuka-carousel": "^4.2.1",

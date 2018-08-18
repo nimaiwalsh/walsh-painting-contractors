@@ -2,18 +2,19 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 import Carousel from 'nuka-carousel'
+import styles from './index.css'
 
 const IndexPage = ({ data }) => {
   return (
-    <div>
-      <Carousel autoplay={true} autoplayInterval={4000} wrapAround={true}>
-        {data.carouselImages.edges.map(({ node }, num) => {
+    <div className={styles}>
+      <Carousel autoplay={true} autoplayInterval={3000} wrapAround={true}>
+        {data.contentfulImage.images.map((image, num) => {
           return (
             <Img
-              key={num}
-              sizes={node.sizes}
+              className="image"
+              key={image}
+              sizes={image.sizes}
               alt={`Image of house number ${num}`}
-              style={{ height: 'calc(100vh - 56px)' }}
             />
           )
         })}
@@ -26,16 +27,17 @@ export default IndexPage
 
 export const query = graphql`
   query imageCarousel {
-    carouselImages: allImageSharp(filter: { id: { regex: "/carousel/" } }) {
-      edges {
-        node {
-          sizes(
-            maxWidth: 800
-            quality: 80
-            traceSVG: { background: "#f2f8f3", color: "#d6ebd9" }
-          ) {
-            ...GatsbyImageSharpSizes
-          }
+    contentfulImage: contentfulImageCollections(title: { eq: "Hero Image Slider" }) {
+      images {
+        sizes(maxWidth: 800) {
+          base64
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
         }
       }
     }

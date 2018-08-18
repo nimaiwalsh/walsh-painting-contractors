@@ -8,9 +8,15 @@ const HeaderContainer = styled('header')`
   border-bottom: ${LINE};
 
   .logo {
-    height: 14rem;
+    height: 13rem;
     padding: 1rem;
     margin-left: -5rem;
+  }
+
+  @media only screen and (max-width: ${BREAKPOINTS.large}) {
+    .logo {
+      margin-left: -7rem;
+    }
   }
 
   @media only screen and (max-width: ${BREAKPOINTS.medium}) {
@@ -19,15 +25,9 @@ const HeaderContainer = styled('header')`
 
     .logo {
       height: 12rem;
-    }
-  } 
-
-  @media only screen and (max-width: ${BREAKPOINTS.large}) {
-    .logo {
-      margin-left: -7rem;
+      margin-left: 0;
     }
   }
-
 `
 
 export default HeaderContainer

@@ -1,7 +1,8 @@
 export const COLOURS = {
-  primary: '#eb2f64',
-  primaryLight: '#FF3366',
-  primaryDark: '#BA265D',
+  primary: '#3A73A5',
+  primaryLight: '#8AB3D8',
+  // primaryDark: '#BA265D',
+  primaryDark: '#10487A',
   greyLight1: '#faf9f9',
   greyLight2: '#f4f2f2',
   greyLight3: '#f0eeee',
@@ -26,5 +27,5 @@ export const BREAKPOINTS = {
   large: '68.75em', //1100px (1100 / 16)
   medium: '56.25em', //900px (900 / 16)
   small: '37.5em', //600px (600 / 16)
-  smallest: '31.25em' //500px (500 / 16)
+  smallest: '31.25em', //500px (500 / 16)
 }

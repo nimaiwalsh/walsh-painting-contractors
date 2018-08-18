@@ -8,6 +8,7 @@ const Header = ({ siteTitle }) => (
   <HeaderContainer>
     <Link to="/">
       <svg className="logo">
+        <title>Logo - Walsh Painting Contractors</title>
         <use xlinkHref={`#${Logo.id}`} />
       </svg>
     </Link>
