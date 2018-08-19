@@ -15,6 +15,7 @@ import user3photo from '../resources/images/user-3.jpg'
 import user4photo from '../resources/images/user-4.jpg'
 
 const Hotel = ({ data }) => {
+  console.log(React.version)
   return (
     <PageContainer>
       <div className="gallery">

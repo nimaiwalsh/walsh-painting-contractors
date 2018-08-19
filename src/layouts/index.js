@@ -12,7 +12,7 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
+        { name: 'Walsh Painting Contractors', content: 'Premium painting and decorating services' },
         { name: 'keywords', content: 'painting, decorating, homes, painter, decorator' },
       ]}
     />

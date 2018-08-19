@@ -31,7 +31,6 @@ export const query = graphql`
       images {
         sizes(maxWidth: 800) {
           base64
-          tracedSVG
           aspectRatio
           src
           srcSet
