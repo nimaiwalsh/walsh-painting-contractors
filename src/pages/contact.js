@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { navigateTo } from 'gatsby-link';
-// import Recaptcha from 'react-google-recaptcha';
+import Recaptcha from 'react-google-recaptcha';
 
 // import FadeInUp from '../components/FadeInUp';
 import FormContainer from '../page-styles/contact.css';
@@ -46,8 +46,6 @@ export default class Contact extends Component {
       .catch(err => alert(error));
   };
 
-  // data-netlify-honeypot="bot-field"
-
   render() {
     const { name, email, message } = this.state;
     return (
@@ -59,6 +57,7 @@ export default class Contact extends Component {
               method="post"
               action="/contact-form-success/"
               data-netlify="true"
+              data-netlify-recaptcha="true"
               data-netlify-honeypot="bot-field"
               onSubmit={this.handleSubmit}
             >
@@ -95,11 +94,11 @@ export default class Contact extends Component {
                 onChange={this.handleChange}
                 className="input-message"
               />
-              {/* <Recaptcha
+              <Recaptcha
                 ref="recaptcha"
                 sitekey={RECAPTCHA_KEY}
                 onChange={this.handleRecaptcha}
-              /> */}
+              />
               <button type="submit" className="button-submit">
                 Submit
               </button>
