@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { navigateTo } from 'gatsby-link';
-import Recaptcha from 'react-google-recaptcha';
+// import Recaptcha from 'react-google-recaptcha';
 
 // import FadeInUp from '../components/FadeInUp';
 import FormContainer from '../page-styles/contact.css';
@@ -96,11 +96,11 @@ export default class Contact extends Component {
                 onChange={this.handleChange}
                 className="input-message"
               />
-              <Recaptcha
+              {/* <Recaptcha
                 ref="recaptcha"
                 sitekey={RECAPTCHA_KEY}
                 onChange={this.handleRecaptcha}
-              />
+              /> */}
               <button type="submit" className="button-submit">
                 Submit
               </button>
