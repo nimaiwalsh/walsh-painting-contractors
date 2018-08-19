@@ -60,7 +60,6 @@ export default class Contact extends Component {
               action="/contact-form-success/"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
-              data-netlify-recaptcha="true"
               onSubmit={this.handleSubmit}
             >
               {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
