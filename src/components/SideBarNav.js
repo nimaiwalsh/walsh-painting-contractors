@@ -4,8 +4,8 @@ import Link from 'gatsby-link'
 
 //ICONS
 import home from '../resources/icons/home.svg'
-import plane from '../resources/icons/aircraft-take-off.svg'
-import key from '../resources/icons/key.svg'
+import paint from '../resources/icons/paint-format.svg'
+import contact from '../resources/icons/new-message.svg'
 import map from '../resources/icons/map.svg'
 // use SVG icons with 'gatsby-plugin-svg-sprite' by:
 //<svg className="side-nav__icon">
@@ -27,7 +27,7 @@ const SideNav = () => {
         <li className="side-nav__item">
           <Link to="/services" className="side-nav__link" activeClassName={'side-nav__link--active'}>
             <svg className="side-nav__icon">
-              <use xlinkHref={`#${plane.id}`} />
+              <use xlinkHref={`#${paint.id}`} />
             </svg>
             <span>Services</span>
           </Link>
@@ -35,7 +35,7 @@ const SideNav = () => {
         <li className="side-nav__item">
           <Link to="/contact" className="side-nav__link" activeClassName={'side-nav__link--active'}>
             <svg className="side-nav__icon">
-              <use xlinkHref={`#${key.id}`} />
+              <use xlinkHref={`#${contact.id}`} />
             </svg>
             <span>Contact</span>
           </Link>

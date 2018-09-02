@@ -1,7 +1,7 @@
 import styled from 'react-emotion'
 import { COLOURS, LINE, BREAKPOINTS } from '../utils/theme'
 
-const PageContainer = styled('div')`
+const AboutPageContainer = styled('section')`
   /*GALLERY SECTION*/
   .gallery {
     display: flex;
@@ -11,89 +11,7 @@ const PageContainer = styled('div')`
       display: block;
     }
   }
-
-  /*OVERVIEW SECTION*/
-  .overview {
-    display: flex;
-    align-items: center;
-    border-bottom: ${LINE};
-
-    &__heading {
-      font-size: 2.25rem;
-      font-weight: 300;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 1.5rem 3rem;
-
-      @media only screen and (max-width: ${BREAKPOINTS.small}) {
-        font-size: 1.8rem;
-        padding: 1.25rem 2rem;
-      }   
-    }
-
-    &__stars {
-      /*Pushes the other flex items to the right*/
-      margin-right: auto;
-      
-      display: flex;
-      align-items: center;
-    }
-
-    &__icon-star,
-    &__icon-location {
-      width: 1.75rem;
-      height: 1.75rem;
-      fill: ${COLOURS.primary};
-    }
-
-    &__location {
-      font-size: 1.2rem;
-      display: flex;
-      vertical-align: center;
-
-    }
-
-    &__icon-location {
-      margin-right: 0.5rem;
-    }
-
-    &__rating {
-      background-color: ${COLOURS.primary};
-      margin-left: 3rem;
-      color: #FFF;
-      padding: 0 2.25rem;
-      align-self: stretch;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      @media only screen and (max-width: ${BREAKPOINTS.small}) {
-        padding: 0 1.5rem;
-      }   
-    }
-
-    &__rating-average {
-      font-size: 2.25rem;
-      font-weight: 300;
-      margin-bottom: -3px;
-
-      @media only screen and (max-width: ${BREAKPOINTS.small}) {
-        font-size: 1.8rem;
-      }   
-    }
-
-    &__rating-count {
-      font-size: .8rem;
-      text-transform: uppercase;
-
-      @media only screen and (max-width: ${BREAKPOINTS.small}) {
-        font-size: 0.5rem;
-      }  
-    }
-  }
-
+  
   /*DETAIL SECTION*/
   .detail {
     font-size: 1.4rem;
@@ -233,4 +151,4 @@ const PageContainer = styled('div')`
     }
   }
 `
-export default PageContainer
+export default AboutPageContainer

@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { navigateTo } from 'gatsby-link';
 import Recaptcha from 'react-google-recaptcha';
 
-// import FadeInUp from '../components/FadeInUp';
-import FormContainer from '../page-styles/contact.css';
+import FadeInUp from '../components/FadeInUp';
+import { ContactPageContainer, FormContainer } from '../page-styles/contact.css';
+import { PageHead } from '../components/PageComponents'
+import { contactSVG } from '../resources/icons/index'
 
 const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY;
 
@@ -26,6 +28,7 @@ export default class Contact extends Component {
     });
   };
 
+  /*Used by netlify to confirm successful recapture before form submission*/
   handleRecaptcha = value => {
     this.setState({ 'g-recaptcha-response': value });
   };
@@ -49,8 +52,11 @@ export default class Contact extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
-        <section>
-          <h1>Contact me</h1>
+      <FadeInUp>
+        <ContactPageContainer>
+
+          <PageHead title="Contact" icon={contactSVG}/>
+          
           <FormContainer>
             <form
               name="contact"
@@ -104,7 +110,8 @@ export default class Contact extends Component {
               </button>
             </form>
           </FormContainer>
-        </section>
+        </ContactPageContainer>
+      </FadeInUp>
     );
   }
 }

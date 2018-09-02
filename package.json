@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "walsh-painting-contractors",
+  "description": "Walsh Painting Contractors",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Nimai Walsh <nimai.walsh@gmail.com>",
   "dependencies": {
     "emotion": "^9.1.2",
     "emotion-server": "^9.1.3",

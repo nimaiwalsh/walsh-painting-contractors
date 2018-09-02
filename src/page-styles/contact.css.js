@@ -1,11 +1,14 @@
 import styled from 'react-emotion';
 import { COLOURS } from '../utils/theme';
 
-const FormContainer = styled('div')`
+export const ContactPageContainer = styled('section')`
+  min-height: 80rem;
+
+`
+
+export const FormContainer = styled('div')`
 
   input, textarea {
     display: block;
   }
 `
-
-export default FormContainer

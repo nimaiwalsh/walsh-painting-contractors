@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
+import IndexPageContainer from '../page-styles/index.css'
 import Carousel from 'nuka-carousel'
-import styles from '../page-styles/index.css'
 
 const IndexPage = ({ data }) => {
   return (
-    <div className={styles}>
+    <IndexPageContainer>
       <Carousel autoplay={true} autoplayInterval={3000} wrapAround={true}>
         {data.contentfulImage.images.map((image, num) => {
           return (
@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
           )
         })}
       </Carousel>
-    </div>
+    </IndexPageContainer>
   )
 }
 

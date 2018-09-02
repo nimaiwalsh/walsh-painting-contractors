@@ -19,13 +19,6 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'carousel-images',
-        path: `${__dirname}/src/resources/images/carousel`,
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         name: 'images',
         path: `${__dirname}/src/resources/images`,
       }
