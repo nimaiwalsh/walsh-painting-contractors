@@ -40,5 +40,10 @@ export const query = graphql`
         }
       }
     }
+    contactFormImage: imageSharp(id: { regex: "/contact-image.jpg/" }) {
+      sizes(maxWidth: 800) {
+        ...GatsbyImageSharpSizes
+      }
+    }
   }
 `

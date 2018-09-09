@@ -1,16 +1,22 @@
 import React from 'react'
 
 import FadeInUp from '../components/FadeInUp'
-import { PageHead } from '../components/PageComponents'
+import { PageContainer, PageContentContainer } from '../page-styles/PageComponents'
+import { PageHead } from '../components/PageHead'
 import { paintSVG } from '../resources/icons/index'
+import ServicesPageContainer from '../page-styles/services.css';
 
 const Services = () => (
   <FadeInUp>
-    <div>
+    <PageContainer>
       <PageHead title="Services" icon={ paintSVG } />
-      <h1>Services</h1>
-      <p>Services Page</p>
-    </div>
+      <PageContentContainer>
+        <div>
+          <h1>Services</h1>
+          <p>Services Page</p>
+        </div>
+      </PageContentContainer> 
+    </PageContainer>
   </FadeInUp>
 )
 

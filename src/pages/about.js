@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 
 import FadeInUp from '../components/FadeInUp'
 import AboutPageContainer from '../page-styles/about.css'
-import { PageHead } from '../components/PageComponents'
+import { PageHead } from '../components/PageHead'
 import CallToAction from '../components/CallToAction'
 import { ButtonInline, Paragraph, List } from '../utils/StyledComponents'
 

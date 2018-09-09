@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { pageHeadStyles } from './PageComponents.css'
+import { pageHeadStyles } from './PageHead.css'
 import Icon from '../components/Icon'
 import { starSVG } from '../resources/icons/index'
 

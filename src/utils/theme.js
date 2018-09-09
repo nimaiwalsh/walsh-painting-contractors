@@ -1,8 +1,9 @@
 export const COLOURS = {
   primary: '#3A73A5',
   primaryLight: '#8AB3D8',
-  // primaryDark: '#BA265D',
+  primaryLightRGB: '138, 179, 216',
   primaryDark: '#10487A',
+  primaryDarkRGB: '16, 72, 122',
   greyLight1: '#faf9f9',
   greyLight2: '#f4f2f2',
   greyLight3: '#f0eeee',
@@ -10,6 +11,11 @@ export const COLOURS = {
   greyDark1: '#333',
   greyDark2: '#777',
   greyDark3: '#999',
+
+  white: '#FFF',
+  whiteRGB: '255, 255, 255',
+  black: '#000',
+  blackRGB: '0, 0, 0',
 
   shadowDark: '0 2rem 6rem rgba(0,0,0,0.3)',
   shadowLight: '0 2rem 5rem rgba(0,0,0,.06)',

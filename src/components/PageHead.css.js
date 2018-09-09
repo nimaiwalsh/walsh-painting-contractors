@@ -5,6 +5,7 @@ export const pageHeadStyles = css`
   display: flex;
   align-items: center;
   border-bottom: ${LINE};
+  background-color: #FFF;
 
   & .heading {
     font-size: 2.25rem;
