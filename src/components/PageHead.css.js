@@ -4,6 +4,7 @@ import { COLOURS, LINE, BREAKPOINTS } from '../utils/theme'
 export const pageHeadStyles = css`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: ${LINE};
   background-color: #FFF;
 
@@ -18,21 +19,6 @@ export const pageHeadStyles = css`
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
     }
-  }
-
-  & .stars {
-    /*Pushes the other flex items to the right*/
-    margin-right: auto;
-
-    display: flex;
-    align-items: center;
-  }
-
-  & .icon-star,
-  & .icon-location {
-    width: 1.75rem;
-    height: 1.75rem;
-    fill: ${COLOURS.primary};
   }
 
   & .tab {

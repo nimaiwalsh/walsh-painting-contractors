@@ -16,7 +16,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'painting, decorating, homes, painter, decorator' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header  siteTitle={data.site.siteMetadata.title}/>
     <Content>
       <SideNav />
       <MainContent>
