@@ -13,7 +13,7 @@ const Services = ({ data }) => (
       <PageHead title="Services" icon={ paintSVG } />
       <PageContentContainer>
         <div>
-          <h1>Services</h1>
+          <h1>Gallery</h1>
           <Gallery photos={ data.galleryImages.images } />
         </div>
       </PageContentContainer> 
