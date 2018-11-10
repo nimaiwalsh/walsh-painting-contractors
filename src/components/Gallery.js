@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Lightbox from 'react-images';
 import Img from 'gatsby-image';
 
+import { GridContainer, Grid } from './Gallery-styles'
+
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -35,14 +37,14 @@ class Gallery extends Component {
   render() {
     const { photos } = this.props;
     return (
-      <div>
-        <div>
+      <GridContainer>
+        <Grid>
           {photos.map((photo, i) => (
             <a key={i} href={photo.sizes.src} onClick={e => this.openLightbox(i, e)}>
               <Img sizes={photo.sizes} />
             </a>
           ))}
-        </div>
+        </Grid>
         <Lightbox
           backdropClosesModal
           images={this.state.photos}
@@ -52,7 +54,7 @@ class Gallery extends Component {
           onClickNext={() => this.gotoNextLightboxImage()}
           onClose={() => this.closeLightbox()}
         />
-      </div>
+      </GridContainer>
     );
   }
 }

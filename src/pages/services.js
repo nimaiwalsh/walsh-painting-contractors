@@ -10,12 +10,9 @@ import ServicesPageContainer from '../page-styles/services.css'
 const Services = ({ data }) => (
   <FadeInUp>
     <PageContainer>
-      <PageHead title="Services" icon={ paintSVG } />
+      <PageHead title="Gallery" icon={ paintSVG } />
       <PageContentContainer>
-        <div>
-          <h1>Gallery</h1>
-          <Gallery photos={ data.galleryImages.images } />
-        </div>
+        <Gallery photos={ data.galleryImages.images } />
       </PageContentContainer> 
     </PageContainer>
   </FadeInUp>
