@@ -29,7 +29,7 @@ const SideNav = () => {
             <svg className="side-nav__icon">
               <use xlinkHref={`#${paint.id}`} />
             </svg>
-            <span>Services</span>
+            <span>Gallery</span>
           </Link>
         </li>
         <li className="side-nav__item">

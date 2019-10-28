@@ -73,7 +73,8 @@ export const FormGroup = styled('div')`
     border-bottom: 3px solid ${COLOURS.primaryDark};
   }
 
-  input:focus:invalid {
+  input:focus:invalid,
+  textarea:focus:invalid {
     border-bottom: 3px solid ${COLOURS.primaryLight};
   }
 

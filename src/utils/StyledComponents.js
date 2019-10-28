@@ -48,6 +48,11 @@ export const ButtonInline = styled('button')`
   }
 `
 
+export const Heading2 = styled('h2')`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+`
+
 export const Paragraph = styled('p')`
   &:not(:last-of-type) {
     margin-bottom: 2rem;

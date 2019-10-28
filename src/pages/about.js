@@ -5,7 +5,7 @@ import FadeInUp from '../components/FadeInUp'
 import AboutPageContainer from '../page-styles/about.css'
 import { PageHead } from '../components/PageHead'
 import CallToAction from '../components/CallToAction'
-import { ButtonInline, Paragraph, List } from '../utils/StyledComponents'
+import { ButtonInline, Paragraph, Heading2, List } from '../utils/StyledComponents'
 
 import Icon from '../components/Icon'
 import { homeSVG, chevronSVG } from '../resources/icons/index'
@@ -36,30 +36,43 @@ const Hotel = ({ data }) => {
         <div className="detail">
           <div className="description">
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-              nisi dignissimos debitis ratione sapiente saepe. Accusantium
-              cumque, quas, ut corporis incidunt deserunt quae architecto
-              voluptate.
+              Your choice of painting contractors is one of those important decisions you will have to make and live with for years!
             </Paragraph>
             <Paragraph>
-              Accusantium cumque, quas, ut corporis incidunt deserunt quae
-              architecto voluptate delectus, inventore iure aliquid aliquam.
+              You are placing in their hands some of, if not the most valuable assets in your life.
+            </Paragraph>
+            <Paragraph>
+              We offer from start to finish a discrete non intrusive approach, professional attitude, correct methods of preparation and only top quality materials.
+            </Paragraph>
+            <Paragraph>
+              At the end you will have a living space of quality and beauty that will remain for many years.
+            </Paragraph>
+            <Heading2>The Difference</Heading2>
+            <Paragraph>
+              After 30 years in this trade we have continued to build a good reputation in the industry, now being contacted by people who have an eye for quality and wanting special finishes and unique colours.
+            </Paragraph>
+            <Paragraph>
+              We take on more and more speciality work and clients that know the look they want but not sure how to achieve the result. It has has taken us to new areas of the trade, developing into an artistic expression of the needs and wants of our clients.
+            </Paragraph>
+            <Paragraph>
+              Starting with the basic flawless finishes of the painting trade, into almost any direction the client wishes to travel. Asked to reproduce images from their travels or from leading trend magazines, we supply samples of differing mediums, from chalkie limes to oil glazes and the use of metals and wallpapers to fulfil the client’s wishes
+            <Paragraph/>
             </Paragraph>
             <List>
               <li>
-                <Icon icon={chevronSVG} />Close to the beach
+                <Icon icon={chevronSVG} />Master painters and decorators
               </li>
               <li>
-                <Icon icon={chevronSVG} />Breakfast included
+                <Icon icon={chevronSVG} />Complete packages
               </li>
               <li>
-                <Icon icon={chevronSVG} />Free airport shuttle
+                <Icon icon={chevronSVG} />Consult on colours and finishes
               </li>
               <li>
-                <Icon icon={chevronSVG} />Free wifi in all rooms
+                <Icon icon={chevronSVG} />Specialised professional advice
               </li>
               <li>
-                <Icon icon={chevronSVG} />Pets allowed
+                <Icon icon={chevronSVG} />Maintenance
               </li>
             </List>
 
