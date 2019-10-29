@@ -22,7 +22,7 @@ export default Services
 
 export const query = graphql`
   query galleryImages {
-    galleryImages: contentfulImageCollections(title: { eq: "Hero Image Slider" }) {
+    galleryImages: contentfulImageCollections(title: { eq: "Gallery" }) {
       images {
         sizes(maxWidth: 800) {
           base64

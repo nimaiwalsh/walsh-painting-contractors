@@ -122,6 +122,7 @@ export default class Contact extends Component {
                 <FormGroup>
                   <textarea
                     required
+                    rows="10"
                     name="message"
                     id="message"
                     type="text"

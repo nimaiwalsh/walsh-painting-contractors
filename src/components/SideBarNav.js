@@ -25,7 +25,7 @@ const SideNav = () => {
           </Link>
         </li>
         <li className="side-nav__item">
-          <Link to="/services" className="side-nav__link" activeClassName={'side-nav__link--active'}>
+          <Link to="/work" className="side-nav__link" activeClassName={'side-nav__link--active'}>
             <svg className="side-nav__icon">
               <use xlinkHref={`#${paint.id}`} />
             </svg>

@@ -1,5 +1,5 @@
 import styled from 'react-emotion'
-import { COLOURS } from '../utils/theme'
+import { COLOURS, BREAKPOINTS } from '../utils/theme'
 
 export const ContactPageContainer = styled('section')``
 
@@ -33,12 +33,15 @@ export const FormBackgroundImage = styled('div')`
 `
 
 export const Form = styled('form')`
-  width: 50%;
+  width: 70%;
   padding: 3rem;
   input,
   textarea {
     display: block;
   }
+  @media (max-width: ${BREAKPOINTS.medium}) {
+      width: 100%;
+    }
 `
 
 export const FormGroup = styled('div')`

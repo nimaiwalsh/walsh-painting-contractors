@@ -9,8 +9,8 @@ import { ButtonInline, Paragraph, Heading2, List } from '../utils/StyledComponen
 
 import Icon from '../components/Icon'
 import { homeSVG, chevronSVG } from '../resources/icons/index'
-import user1photo from '../resources/images/user-1.jpg'
-import user2photo from '../resources/images/user-2.jpg'
+import user1photo from '../resources/images/heanes-built-logo.jpg'
+import user2photo from '../resources/images/steve-kerr-logo.jpg'
 import user3photo from '../resources/images/user-3.jpg'
 import user4photo from '../resources/images/user-4.jpg'
 
@@ -76,7 +76,7 @@ const Hotel = ({ data }) => {
               </li>
             </List>
 
-            <div className="recommend">
+            {/* <div className="recommend">
               <p className="recommend__count">
                 Lucy and 3 other friends recommend this hotel
               </p>
@@ -86,7 +86,7 @@ const Hotel = ({ data }) => {
                 <img src={user3photo} />
                 <img src={user4photo} />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="user-reviews">
@@ -102,10 +102,10 @@ const Hotel = ({ data }) => {
                   className="review__photo"
                 />
                 <div className="review__user-box">
-                  <p className="review__user-name">Ballbag</p>
-                  <p className="review__user-date">23 May 2018</p>
+                  <p className="review__user-name">Ian Heanes</p>
+                  <p className="review__user-site"><a target="_blank" href="http://heanesbuilt.com.au/">Heanesbuilt</a></p>
                 </div>
-                <div className="review__rating">9.8</div>
+                {/* <div className="review__rating">9.8</div> */}
               </figcaption>
             </figure>
 
@@ -122,15 +122,12 @@ const Hotel = ({ data }) => {
                   className="review__photo"
                 />
                 <div className="review__user-box">
-                  <p className="review__user-name">Miss Petty</p>
-                  <p className="review__user-date">28 May 2018</p>
+                  <p className="review__user-name">Steve Kerr</p>
+                  <p className="review__user-site"><a target="_blank" href="http://www.stevekerrhomes.com.au/">Steve Kerr Homes</a></p>
                 </div>
-                <div className="review__rating">7.8</div>
+                {/* <div className="review__rating">7.8</div> */}
               </figcaption>
             </figure>
-            <ButtonInline>
-              View more <span>&rarr;</span>
-            </ButtonInline>
           </div>
         </div>
 

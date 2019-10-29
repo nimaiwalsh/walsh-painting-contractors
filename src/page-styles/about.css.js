@@ -111,8 +111,8 @@ const AboutPageContainer = styled('section')`
     }
 
     &__photo {
-      height: 4.5rem;
-      width: 4.5rem;
+      height: 6rem;
+      width: 6rem;
       border-radius: 50%;
       margin-right: 1.5rem;
     }
@@ -128,9 +128,14 @@ const AboutPageContainer = styled('section')`
       margin-bottom: .4rem;
     }
 
-    &__user-date {
-      font-size: 1rem;
+    &__user-site {
+      font-size: 1.5rem;
       color: ${COLOURS.greyDark2};
+      a:active, 
+      a:link,
+      a:visited {
+        color: ${COLOURS.primary};
+      }
     }
 
     &__rating {
