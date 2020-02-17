@@ -68,6 +68,10 @@ export default class Contact extends Component {
     console.log(contactFormImage)
     return (
       <FadeInUp>
+        <Helmet>
+          <title>Contact us</title>
+          <meta name="Get in contact for your next project or specialised advice" content="contact form" />
+        </Helmet>
         <PageContainer>
           <PageHead title="Contact" icon={contactSVG} />
           <PageContentContainer>

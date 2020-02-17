@@ -7,6 +7,10 @@ import Carousel from 'nuka-carousel'
 const IndexPage = ({ data }) => {
   return (
     <IndexPageContainer>
+      <Helmet>
+        <title>Home</title>
+        <meta name="See our opening splash page for some inspiring projects and work" content="slideshow" />
+      </Helmet>
       <Carousel autoplay={true} autoplayInterval={3000} wrapAround={true}>
         {data.contentfulImage.images.map((image, num) => {
           return (

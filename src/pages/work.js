@@ -9,6 +9,10 @@ import ServicesPageContainer from '../page-styles/services.css'
 
 const Services = ({ data }) => (
   <FadeInUp>
+    <Helmet>
+        <title>Gallery and showcase</title>
+        <meta name="See our premium finishes and master projects" content="gallery and portfolio" />
+    </Helmet>
     <PageContainer>
       <PageHead title="Gallery" icon={ paintSVG } />
       <PageContentContainer>
