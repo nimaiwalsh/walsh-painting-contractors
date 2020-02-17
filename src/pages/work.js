@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import FadeInUp from '../components/FadeInUp'
 import { PageContainer, PageContentContainer } from '../page-styles/PageComponents'
@@ -9,11 +10,11 @@ import ServicesPageContainer from '../page-styles/services.css'
 
 const Services = ({ data }) => (
   <FadeInUp>
-    <Helmet>
-        <title>Gallery and showcase</title>
-        <meta name="See our premium finishes and master projects" content="gallery and portfolio" />
-    </Helmet>
     <PageContainer>
+      <Helmet>
+          <title>Gallery and showcase</title>
+          <meta name="description" content="See our premium finishes and master projects" />
+      </Helmet>
       <PageHead title="Gallery" icon={ paintSVG } />
       <PageContentContainer>
         <Gallery photos={ data.galleryImages.images } />

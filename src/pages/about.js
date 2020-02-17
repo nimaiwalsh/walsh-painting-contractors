@@ -1,5 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
+import Helmet from 'react-helmet'
 
 import FadeInUp from '../components/FadeInUp'
 import AboutPageContainer from '../page-styles/about.css'
@@ -13,17 +14,16 @@ import user1photo from '../resources/images/heanes-built-logo.jpg'
 import user2photo from '../resources/images/steve-kerr-logo.jpg'
 import user3photo from '../resources/images/user-3.jpg'
 import user4photo from '../resources/images/user-4.jpg'
-import Helmet from 'react-helmet'
 
 const Hotel = ({ data }) => {
   console.log(React.version)
   return (
     <FadeInUp>
-      <Helmet>
-        <title>About</title>
-        <meta name="More about us — Masters in the trade" content="page" />
-      </Helmet>
       <AboutPageContainer>
+        <Helmet>
+          <title>About</title>
+          <meta name="description" content="More about us — Masters in the trade" />
+        </Helmet>
         <div className="gallery">
           <figure className="gallery__item">
             <Img sizes={data.hotelImages.edges[0].node.sizes} alt="Hotel 1" />

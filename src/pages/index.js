@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
+import Helmet from 'react-helmet'
 import IndexPageContainer from '../page-styles/index.css'
 import Carousel from 'nuka-carousel'
 
@@ -9,7 +10,7 @@ const IndexPage = ({ data }) => {
     <IndexPageContainer>
       <Helmet>
         <title>Home</title>
-        <meta name="See our opening splash page for some inspiring projects and work" content="slideshow" />
+        <meta name="description" content="See our opening splash page for some inspiring projects and work" />
       </Helmet>
       <Carousel autoplay={true} autoplayInterval={3000} wrapAround={true}>
         {data.contentfulImage.images.map((image, num) => {

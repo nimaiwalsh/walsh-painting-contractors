@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { navigateTo } from 'gatsby-link'
 import Img from 'gatsby-image'
 import Recaptcha from 'react-google-recaptcha'
+import Helmet from 'react-helmet'
+
 
 import FadeInUp from '../components/FadeInUp'
 import {
@@ -68,11 +70,11 @@ export default class Contact extends Component {
     console.log(contactFormImage)
     return (
       <FadeInUp>
-        <Helmet>
-          <title>Contact us</title>
-          <meta name="Get in contact for your next project or specialised advice" content="contact form" />
-        </Helmet>
         <PageContainer>
+        <Helmet>
+            <title>Contact us</title>
+            <meta name="description" content="Get in contact for your next project or specialised advice" />
+          </Helmet>
           <PageHead title="Contact" icon={contactSVG} />
           <PageContentContainer>
             <FormContainer>
