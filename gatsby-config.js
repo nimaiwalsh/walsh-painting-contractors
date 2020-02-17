@@ -1,14 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'Walsh Painting Contractors',
+    title: `Walsh Painting Contractors`,
+    siteUrl: `https://walshpainting.com.au`,
+    description: `Master painters and decorators. Walsh Painting Contractors operate near Byron Bay, Northern NSW and specialise in luxury homes and specialised projects.`,
+    image: `/wpc-logo-small.png` // image must be in static folder
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-svg-sprite',
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-react-next',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-svg-sprite`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-next`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -17,9 +20,9 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'images',
+        name: `images`,
         path: `${__dirname}/src/resources/images`,
       }
     },
