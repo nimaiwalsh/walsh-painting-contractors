@@ -9,13 +9,13 @@ import SideNav from '../components/SideBarNav'
 
 const Layout = ({ children, data }) => (
   <Container >
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'Walsh Painting Contractors', content: 'Premium painting and decorating services' },
-        { name: 'keywords', content: 'painting, decorating, homes, painter, decorator' },
-      ]}
-    />
+    <Helmet title={data.site.siteMetadata.title}>
+      <meta name="description" content={data.site.siteMetadata.description} />
+      <meta name="image" content={data.site.siteMetadata.image} />
+      <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
+      <meta property="og:title" content={data.site.siteMetadata.title} />
+      <meta property="og:description" content={data.site.siteMetadata.description} />
+    </Helmet>
     <Header  siteTitle={data.site.siteMetadata.title}/>
     <Content>
       <SideNav />
@@ -37,6 +37,9 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
+        image
+        siteUrl
       }
     }
   }
