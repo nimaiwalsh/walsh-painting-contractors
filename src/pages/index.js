@@ -9,8 +9,13 @@ const IndexPage = ({ data }) => {
   return (
     <IndexPageContainer>
       <Helmet>
-        <title>Home</title>
-        <meta name="description" content="See our opening splash page for some inspiring projects and work" />
+        <Helmet title={data.site.siteMetadata.title}>
+        <meta name="description" content={data.site.siteMetadata.description} />
+        <meta name="image" content={data.site.siteMetadata.image} />
+        <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
+        <meta property="og:title" content={data.site.siteMetadata.title} />
+        <meta property="og:description" content={data.site.siteMetadata.description} />
+    </Helmet>
       </Helmet>
       <Carousel autoplay={true} autoplayInterval={3000} wrapAround={true}>
         {data.contentfulImage.images.map((image, num) => {
@@ -43,6 +48,14 @@ export const query = graphql`
           srcSetWebp
           sizes
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        description
+        image
+        siteUrl
       }
     }
   }
