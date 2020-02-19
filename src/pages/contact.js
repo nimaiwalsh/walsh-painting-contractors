@@ -71,7 +71,7 @@ export default class Contact extends Component {
     return (
       <FadeInUp>
         <PageContainer>
-        <Helmet>
+          <Helmet>
             <title>Contact us</title>
             <meta name="description" content="Get in contact for your next project or specialised advice" />
           </Helmet>

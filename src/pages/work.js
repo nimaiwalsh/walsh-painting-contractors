@@ -12,8 +12,8 @@ const Services = ({ data }) => (
   <FadeInUp>
     <PageContainer>
       <Helmet>
-          <title>Gallery and showcase</title>
-          <meta name="description" content="See our premium finishes and master projects" />
+        <title>Gallery and showcase</title>
+        <meta name="description" content="See our premium finishes and master projects" />
       </Helmet>
       <PageHead title="Gallery" icon={ paintSVG } />
       <PageContentContainer>
