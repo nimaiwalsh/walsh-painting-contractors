@@ -97,8 +97,9 @@ const Hotel = ({ data }) => {
           <div className="user-reviews">
             <figure className="review">
               <blockquote className="review__text">
-                Accusantium cumque, quas, ut corporis incidunt deserunt quae
-                architecto voluptate delectus, inventore iure aliquid aliquam.
+                Tony and his team are a cut above when it comes to professionalism and level of finish.
+                When delivering architecturally designed homes the painting is such a critical phase of the project,
+                Tony manages to surpass expectations regardless of the specified finish.
               </blockquote>
               <figcaption className="review__user">
                 <img
