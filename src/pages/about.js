@@ -117,9 +117,8 @@ const Hotel = ({ data }) => {
 
             <figure className="review">
               <blockquote className="review__text">
-                Corporis incidunt deserunt quae architecto voluptate delectus,
-                inventore iure aliquid aliquam. Deserunt quae architecto
-                voluptate delectus.
+                Tony Walsh has been painting our high end architecturally designed HIA award winning homes for the past 15 years.
+                Tony has great product knowledge, excellent attention to detail and consistently completes our projects to a high level of finish.
               </blockquote>
               <figcaption className="review__user">
                 <img
